@@ -10,3 +10,16 @@
 .navspan{
     font-size: 30px;
 }
+
+/*
+* Para trocar a cor dos card ou adicionar efeito
+* tem que tirar a cor do card no HTML
+
+.projecto{
+    background-color: #0288d1;
+    
+}
+
+.projecto:hover{
+    background-color: #039be5;
+}*/

@@ -11,10 +11,9 @@ body{
     background-image: linear-gradient(to right bottom, #800df2,#00ff43);
     height: 100vh;
     width: 100vw;
+    background-size: cover;
     /*adicionando imagem de fundo 
     background-image: url(/images/e4342a4e0e968344b75cf50cf1936c09.jpg);*/
-    background-size: cover;
-    
 }
 
 .imgProfile{
