@@ -56,8 +56,8 @@ body{
 .btn{
     background-image: linear-gradient(
         to right bottom,
-        rgb(248, 247, 248) , 
-        rgb(5, 174, 252)
+        rgb(134, 234, 238) , 
+        rgb(5, 133, 252)
     );
 }
 
@@ -68,10 +68,11 @@ body{
         rgb(93, 203, 236) , 
         rgb(91, 144, 243)
     ) !important;
-    box-shadow: 0 0 35px rgb(240, 7, 248) !important;
+    box-shadow: 0 0 35px rgb(220, 7, 248) !important;
 }
 
 footer{
+    font-size: 0.9rem;
     width: 100%;
     height: 100px;
     bottom: 0;
@@ -82,4 +83,14 @@ footer{
 
 p,h1{
     color: white;
+}
+
+.back-to-home-span{    
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.back-to-home-span:hover{
+    color: rgb(0, 60, 255);
 }

@@ -9,10 +9,10 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.089);
     backdrop-filter: blur(20px);
-    border: 3px solid white;
+    border: 5px solid white;
     color: white;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     flex-direction: column;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
     transition: all .4s;
