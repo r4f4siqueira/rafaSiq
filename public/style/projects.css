@@ -1,14 +1,68 @@
-.projects{
-    margin-top: 3vh;
+.cartao{
+    position: relative;
+    cursor: pointer;
 }
 
-.navimg{
-    margin-top: 1.5vh;
-    border-radius: 3px;
+.cartao .cartao-projeto{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
+    transition: all .4s;
 }
 
-.navspan{
-    font-size: 30px;
+.cartao .cartao-projeto p{
+    padding: 0.3em 1.5em;
+}
+
+.cartao:hover .cartao-projeto{
+    color: rgb(36, 36, 36);
+}
+
+.cartao::before,
+.cartao::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #7f00ff;
+    z-index: -20;
+    transition: all .4s;
+}
+
+.cartao::before{
+    top: 0;
+    right: 0;
+}
+.cartao::after{
+    bottom: 0;
+    left: 0;
+    background: #e100ff;
+}
+
+.cartao:hover::before{
+    margin-right: -3em;
+    width: 50px;
+    height: 50px;
+    transform: translate(-20px, -20px);
+    border-radius: 50%;
+}
+.cartao:hover::after{
+    margin-bottom: -2.8rem;
+    width: 50px;
+    height: 50px;
+    transform: translate(-20px,-20px);
+    border-radius: 50%;
+}
+
+p,h1{
+    color: white;
 }
 
 /*
