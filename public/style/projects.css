@@ -5,11 +5,12 @@
 }
 
 .cartao .cartao-projeto{
+    border-radius: 16px;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.089);
-    backdrop-filter: blur(20px);
-    border: 5px solid white;
+    backdrop-filter: blur(8px);
+    border: 5px solid rgb(52, 206, 245);
     color: white;
     display: flex;
     /*align-items: center;*/
@@ -28,11 +29,12 @@
 
 .cartao::before,
 .cartao::after{
+    border-radius: 16px;
     content: '';
     position: absolute;
     width: 100%;
     height: 50%;
-    background: #8000ff6e;
+    background: #00eeff6e;
     z-index: -20;
     transition: all .4s;
 }
@@ -44,7 +46,7 @@
 .cartao::after{
     bottom: 0;
     left: 0;
-    background: #e100ff6b;
+    background: #0228ff6b;
 }
 
 .cartao:hover::before{
