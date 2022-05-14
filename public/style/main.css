@@ -85,6 +85,10 @@ p,h1{
     color: white;
 }
 
+.text-footer{
+    cursor: default;
+}
+
 .back-to-home-span{    
     text-decoration: underline;
     font-size: 30px;
