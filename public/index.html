@@ -1,142 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>r4f4siqueira</title>
-    
-    <link rel="shortcut icon" href="./images/fav/RSLogotipo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-</head>
-<body>
-    <div class="container center">
-        <div class="row">
-            <div class="col s12 m12">
-                <div class="itens">
-                    <div>
-                        <img width="100" height="100" class="circle imgProfile" src="./images/profile/Profile.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links btn" href="https://github.com/r4f4siqueira" target="_blank">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">r4f4siqueira</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links btn" href="https://www.linkedin.com/in/rafael-siqueira-a6a3a116b/" target="_blank">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/linkedin.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">Rafael Siqueira</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links btn" href="https://www.facebook.com/rafael.foguinho.9" target="_blank">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/facebook.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">Rafael Siqueira</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links btn" href="https://www.instagram.com/r4f4siqueira/" target="_blank">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/Instagram.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">@r4f4siqueira</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links copia btn" data-clipboard-text="r4f4siqueira@gmail.com" target="_blank">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/google_mail_gmail.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">r4f4siqueira@gmail.com</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-                    <div>
-                        <div>
-                            <a id="link" class="bt-links copia btn" href="pages/projects.html">
-                                <div class="row">
-                                    <div class="col s4 m5 iconLink">
-                                        <img width="30" height="30" class="imgLink right" src="./images/icons/gearCode.png" alt="">
-                                    </div>
-                                    <div class="col s8 m7">
-                                        <t class="text-link left">Projetos</t>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./src/clipBoard.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-<footer>
-    <div class="container">
-        <div class="row center">
-            <div class="col s12 m12">
-                <div class="col s4 m4">
-                    <p class="text-footer">Desenvolvido por<br>Rafael Siqueira</p>
-                </div>
-                <div class="col s4 m4">
-                    <a href="./pages/credits.html"><p>Credits</p></a>
-                </div>
-                <div class="col s4 m4">
-                    <p class="text-footer">v 2.0.1</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
