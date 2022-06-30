@@ -5,7 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         cursor: default;
-        background-color: #0d2636;
+        //background-color: #0d2636;
         color: #f1f6fc;
 
         html,body,#root{
@@ -13,7 +13,7 @@ export default createGlobalStyle`
         }
     
         body{
-            background: #341e2a;
+            background: #0d2636;
             font-size: 14px;
             -webkit-font-smoothing: antialiased !important;
         }
