@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import fundo from "../assets/SL-043021-42650-28.jpg";
 
 export default createGlobalStyle`
     *{
@@ -13,12 +14,22 @@ export default createGlobalStyle`
         }
     
         body{
-            background: #0d2636;
+            background-attachment: fixed;
+            background-image: url(${fundo});
+            background-position: center;
+	        background-size: cover;
+            //height: 100vh;
+            //width: 100vw;
+            //background-repeat: no-repeat;
+            //background: #0d2636;
             font-size: 14px;
             -webkit-font-smoothing: antialiased !important;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
         }
     
-        body, imput, button{
+        body, input, button{
             color: #222;
             font-size: 14px;
             font-family: Arial, Halvetica, sans-serif;

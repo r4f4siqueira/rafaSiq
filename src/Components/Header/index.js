@@ -6,8 +6,8 @@ import React, { useState } from "react";
 function Header() {
     const [botoes, setBotoes] = useState([
         { id: 1, nome: "home", label: "HOME", ativo: true, link: "" },
-        { id: 2, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
-        { id: 3, nome: "links", label: "LINKS ÚTEIS", ativo: false, link: "links" },
+        { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+        { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
     ]);
 
     function ativo(index) {
@@ -50,22 +50,22 @@ function Header() {
             case 1:
                 setBotoes([
                     { id: 1, nome: "home", label: "HOME", ativo: true, link: "" },
-                    { id: 2, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
-                    { id: 3, nome: "links", label: "LINKS ÚTEIS", ativo: false, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+                    { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
                 ]);
                 break;
             case 2:
                 setBotoes([
                     { id: 1, nome: "home", label: "HOME", ativo: false, link: "" },
-                    { id: 2, nome: "projetos", label: "PROJETOS", ativo: true, link: "projetos" },
-                    { id: 3, nome: "links", label: "LINKS ÚTEIS", ativo: false, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: true, link: "links" },
+                    { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
                 ]);
                 break;
             case 3:
                 setBotoes([
                     { id: 1, nome: "home", label: "HOME", ativo: false, link: "" },
-                    { id: 2, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
-                    { id: 3, nome: "links", label: "LINKS ÚTEIS", ativo: true, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+                    { id: 3, nome: "projetos", label: "PROJETOS", ativo: true, link: "projetos" },
                 ]);
                 break;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: aqua;
+    background-color: transparent;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
@@ -9,7 +9,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 1vw #81f7f3;
+    //box-shadow: 0 0 1vw #81f7f3;
 
     a {
         text-decoration: none;
@@ -18,9 +18,9 @@ export const Container = styled.div`
     .home,
     .projetos,
     .links {
-        margin-top: -1vh;
-        margin-left: 1vh;
-        margin-right: 1vh;
+        //margin-top: -1vh;
+        margin-left: 0.25vw;
+        margin-right: 0.25vw;
         display: inline-block;
         padding: 2vh 5vw;
         min-height: 2vh;
@@ -29,7 +29,7 @@ export const Container = styled.div`
         text-align: center;
         text-decoration: none;
         outline: none;
-        background-color: #0c2635;
+        background-color: #002e74;
         border: solid 2px;
         border-radius: 15px;
         box-shadow: 0 9px #999;
@@ -38,23 +38,24 @@ export const Container = styled.div`
     .home:hover,
     .projetos:hover,
     .links:hover {
-        background-color: #2e64fe;
+        background-color: #ddb447;
     }
 
     .home:active,
     .projetos:active,
     .links:active {
-        background-color: #2e64fe;
+        background-color: #345990;
         box-shadow: 0 5px #666;
         transform: translateY(6px);
         border: solid 2px;
     }
 
     .true {
-        background-color: #2e64fe;
+        background-color: #ffb701;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
         border: solid 2px;
+        transition: all 0.2s;
     }
 `;
 //vw

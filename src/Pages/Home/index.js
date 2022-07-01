@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import apiGithub from "../../services/github";
 import { Container } from "./style";
+import imgPerfil from "../../assets/imagesmode_FILL0_wght400_GRAD0_opsz48.svg";
+import Footer from "../../Components/Footer";
 
 function Home() {
     const [perfilGithub, setPerfilGithub] = useState([]);
@@ -18,13 +20,35 @@ function Home() {
     if (loading) {
         return <h1>Cerregando . . . </h1>;
     }
-    console.log(perfilGithub);
+    //<img src={perfilGithub.avatar_url}></img>
     return (
-        <Container>
-            <h1>Home</h1>
-            <img src={perfilGithub.avatar_url}></img>
-            <p>Rafael</p>
-        </Container>
+        <>
+            <Container>
+                <div className="divImagem">
+                    <img className="imagem" src={imgPerfil}></img>
+                </div>
+                <div className="area-texto">
+                    <div className="titulo">
+                        <h1>{perfilGithub.name}</h1>
+                    </div>
+                    <div className="texto">
+                        <p>👀 Interessado em aprender e ser desafiado </p>
+                        <br />
+                        <p>🌱 Estudando engenharia de software</p>
+                        <br />
+                        <p>
+                            💻 Trabalho como desenvolvedor Jr na faculdade em que estudo{" "}
+                            <a href="https://www.unigran.br/" target="blank">
+                                "UNIGRAN"
+                            </a>
+                        </p>
+                        <br />
+                        <p>😄 No botão links você encontra várias formas de entrar em contato comigo!</p>
+                    </div>
+                </div>
+            </Container>
+            <Footer />
+        </>
     );
 }
 export default Home;
