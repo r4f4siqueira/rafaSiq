@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import apiGithub from "../../services/github";
+import { Container } from "./style";
+import Footer from "../../Components/Footer";
 
 function Projetos() {
     const [repositorios, setRepositorios] = useState([]);
@@ -17,21 +19,31 @@ function Projetos() {
     if (loading) {
         return <h1>Cerregando . . . </h1>;
     }
-    console.log(repositorios);
 
     return (
-        <div>
-            <ul>
+        <>
+            <Container>
                 {repositorios.map((repositorio) => (
-                    <li key={repositorio.id}>
+                    <div key={repositorio.id} className="repositorios">
                         <h1>{repositorio.name}</h1>
                         <h2>{repositorio.description}</h2>
-                        <p>Git Clone: {repositorio.clone_url}</p>
-                        <span>{repositorio.language}</span>
-                    </li>
+                        <br></br>
+                        <span>
+                            Ver no gitHub{" "}
+                            <a href={repositorio.html_url} target="blank">
+                                {repositorio.html_url}
+                            </a>
+                        </span>
+                        <br></br>
+                        <span>Git Clone: {repositorio.clone_url}</span>
+                        <span>Default branch: {repositorio.default_branch}</span>
+                        <br></br>
+                        <span>Linguagem: {repositorio.language}</span>
+                    </div>
                 ))}
-            </ul>
-        </div>
+            </Container>
+            <Footer></Footer>
+        </>
     );
 }
 export default Projetos;

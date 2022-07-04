@@ -11,7 +11,6 @@ export const Container = styled.div`
     //border: solid red;
 
     .divImagem {
-        border: solid red;
         width: 50vh;
         height: 50vh;
         margin-top: 20vh;
@@ -24,6 +23,8 @@ export const Container = styled.div`
         .imagem {
             width: 100%;
             height: 100%;
+            border-radius: 16px;
+            box-shadow: 0 0 25px #fff;
         }
     }
 
@@ -42,6 +43,7 @@ export const Container = styled.div`
         text-align: justify;
         display: flex;
         flex-direction: column;
+        box-shadow: 0 0 25px #fff;
         //justify-content: center;
         //align-items: center;
 
@@ -56,12 +58,14 @@ export const Container = styled.div`
         }
 
         a {
-            color: #012363;
+            color: #feb705;
             transition: all 0.4s;
         }
         a:hover {
-            color: #feb705;
+            color: #012363;
             cursor: pointer;
+            border-radius: 4px;
+            box-shadow: inset 0 0 10px #012363;
         }
     }
     @media screen and (max-width: 1000px) {
@@ -71,7 +75,6 @@ export const Container = styled.div`
 
         .divImagem {
             margin-top: 2vh;
-            border: solid black;
             width: 80vw;
             height: 80vw;
         }
@@ -87,6 +90,17 @@ export const Container = styled.div`
 
             .texto {
                 margin-top: 5vh;
+            }
+        }
+        @media screen and (max-height: 500px) {
+            margin-top: 2vh;
+            .divImagem {
+                width: 50vw;
+                height: 50vw;
+            }
+
+            .area-texto {
+                height: 85vh;
             }
         }
     }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import apiGithub from "../../services/github";
 import { Container } from "./style";
-import imgPerfil from "../../assets/imagesmode_FILL0_wght400_GRAD0_opsz48.svg";
 import Footer from "../../Components/Footer";
 
 function Home() {
@@ -25,7 +24,7 @@ function Home() {
         <>
             <Container>
                 <div className="divImagem">
-                    <img className="imagem" src={imgPerfil}></img>
+                    <img className="imagem" src={perfilGithub.avatar_url} alt="Imagem de perfil"></img>
                 </div>
                 <div className="area-texto">
                     <div className="titulo">

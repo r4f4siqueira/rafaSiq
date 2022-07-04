@@ -9,6 +9,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     //box-shadow: 0 0 1vw #81f7f3;
 
     a {
@@ -17,12 +18,13 @@ export const Container = styled.div`
 
     .home,
     .projetos,
-    .links {
+    .links,
+    .creditos {
         //margin-top: -1vh;
         margin-left: 0.25vw;
         margin-right: 0.25vw;
         display: inline-block;
-        padding: 2vh 5vw;
+        padding: 10px 50px;
         min-height: 2vh;
         min-width: 5vw;
         cursor: pointer;
@@ -37,17 +39,20 @@ export const Container = styled.div`
 
     .home:hover,
     .projetos:hover,
-    .links:hover {
+    .links:hover,
+    .creditos:hover {
         background-color: #ddb447;
     }
 
     .home:active,
     .projetos:active,
-    .links:active {
+    .links:active,
+    .creditos:active {
         background-color: #345990;
         box-shadow: 0 5px #666;
         transform: translateY(6px);
         border: solid 2px;
+        font-weight: normal;
     }
 
     .true {
@@ -56,6 +61,15 @@ export const Container = styled.div`
         transform: translateY(4px);
         border: solid 2px;
         transition: all 0.2s;
+        font-weight: normal;
+    }
+    @media screen and (max-width: 640px) {
+        .home,
+        .projetos,
+        .links,
+        .creditos {
+            padding: 10px 5px;
+        }
     }
 `;
 //vw
