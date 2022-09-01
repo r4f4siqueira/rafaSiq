@@ -13,7 +13,7 @@ function Links() {
                 <div>
                     <a className="btlinks impar" href="https://github.com/r4f4siqueira" target="blank">
                         <div className="imglinks">
-                            <img src={gitHubImg}></img>
+                            <img src={gitHubImg} alt='github'></img>
                         </div>
                         <div className="spanlinks">
                             <span>r4f4siqueira</span>
@@ -24,7 +24,7 @@ function Links() {
                 <div>
                     <a className="btlinks par" href="https://www.linkedin.com/in/rafael-siqueira-a6a3a116b/" target="blank">
                         <div className="imglinks">
-                            <img src={linkedinImg}></img>
+                            <img src={linkedinImg} alt='linkedin'></img>
                         </div>
                         <div className="spanlinks">
                             <span>Rafael Siqueira</span>
@@ -35,7 +35,7 @@ function Links() {
                 <div>
                     <a className="btlinks impar" href="https://www.facebook.com/rafael.foguinho.9" target="blank">
                         <div className="imglinks">
-                            <img src={faceImg}></img>
+                            <img src={faceImg} alt='facebook'></img>
                         </div>
                         <div className="spanlinks">
                             <span>Rafael Siqueira</span>
@@ -46,7 +46,7 @@ function Links() {
                 <div>
                     <a className="btlinks par" href="https://www.instagram.com/r4f4siqueira/" target="blank">
                         <div className="imglinks">
-                            <img src={instaImg}></img>
+                            <img src={instaImg} alt='instagran'></img>
                         </div>
                         <div className="spanlinks">
                             <span>@r4f4siqueira</span>
@@ -61,7 +61,7 @@ function Links() {
                         target="blank"
                     >
                         <div className="imglinks">
-                            <img src={gmailImg}></img>
+                            <img src={gmailImg} alt="gmail"></img>
                         </div>
                         <div className="spanlinks">
                             <span>r4f4siqueira@gmail.com</span>
