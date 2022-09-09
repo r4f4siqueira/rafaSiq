@@ -5,8 +5,7 @@ import React, { useState } from "react";
 
 function Header() {
     const [botoes, setBotoes] = useState([
-        { id: 1, nome: "home", label: "HOME", ativo: true, link: "" },
-        { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+        { id: 2, nome: "links", label: "LINKS", ativo: true, link: "" },
         { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
         { id: 4, nome: "creditos", label: "CREDITOS", ativo: false, link: "creditos" },
     ]);
@@ -50,32 +49,28 @@ function Header() {
         switch (index) {
             case 1:
                 setBotoes([
-                    { id: 1, nome: "home", label: "HOME", ativo: true, link: "" },
-                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: true, link: "" },
                     { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
                     { id: 4, nome: "creditos", label: "CREDITOS", ativo: false, link: "creditos" },
                 ]);
                 break;
             case 2:
                 setBotoes([
-                    { id: 1, nome: "home", label: "HOME", ativo: false, link: "" },
-                    { id: 2, nome: "links", label: "LINKS", ativo: true, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: true, link: "" },
                     { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
                     { id: 4, nome: "creditos", label: "CREDITOS", ativo: false, link: "creditos" },
                 ]);
                 break;
             case 3:
                 setBotoes([
-                    { id: 1, nome: "home", label: "HOME", ativo: false, link: "" },
-                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "" },
                     { id: 3, nome: "projetos", label: "PROJETOS", ativo: true, link: "projetos" },
                     { id: 4, nome: "creditos", label: "CREDITOS", ativo: false, link: "creditos" },
                 ]);
                 break;
             case 4:
                 setBotoes([
-                    { id: 1, nome: "home", label: "HOME", ativo: false, link: "" },
-                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "links" },
+                    { id: 2, nome: "links", label: "LINKS", ativo: false, link: "" },
                     { id: 3, nome: "projetos", label: "PROJETOS", ativo: false, link: "projetos" },
                     { id: 4, nome: "creditos", label: "CREDITOS", ativo: true, link: "creditos" },
                 ]);
