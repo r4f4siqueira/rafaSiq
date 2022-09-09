@@ -63,12 +63,13 @@ export const Container = styled.div`
         transition: all 0.2s;
         font-weight: normal;
     }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 511px) {
         .home,
         .projetos,
         .links,
         .creditos {
-            padding: 10px 5px;
+            padding-left: 24px;
+            padding-right: 24px;
         }
     }
 `;

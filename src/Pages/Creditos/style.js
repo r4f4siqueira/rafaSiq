@@ -21,7 +21,7 @@ export const Container = styled.div`
         justify-content: center;
         margin-top: 20px;
         width: 60vw;
-        border-left: solid #012363;
+        //border-left: solid #012363;
         border-bottom: solid #012363;
         transition: all 0.2s;
     }

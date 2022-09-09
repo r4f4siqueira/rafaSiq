@@ -1,53 +1,83 @@
 import styled from "styled-components";
 
+export const ContainerPerfil = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    .img-perfil{
+        width: 128px;
+        height: 128px;
+        border-radius: 100%;
+    }
+
+    .div-description{
+        width: 82vw;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+    }
+
+`
+
 export const Container = styled.div`
-    width: 80vw;
+    width: 50vw;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 24px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.2);
     border-radius: 40px 10px;
     box-shadow: 0 0 25px #fff;
+    padding: 10px;
+    
 
     .btlinks {
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
-        margin-bottom: 20px;
         text-decoration: none;
-        margin-left: 5px;
-        margin-right: 5px;
+        
         background-color: #fff;
         border-radius: 8px;
         background-color: #012363;
         border: solid 1px #fff;
         transition: all 0.3s;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
         //box-shadow: inset 0 0 10px #fff;
 
         .imglinks {
             display: flex;
             align-items: flex-end;
             flex-direction: column;
-
             justify-content: center;
-            width: 80vw;
-            height: 10vh;
+            width: 45vw;
+            height: 40px;
+            margin-right:15px;
 
             img {
-                max-width: 50px;
-                max-height: 50px;
+                max-width: 24px;
+                max-height: 24px;
             }
         }
 
         .spanlinks {
-            width: 80vw;
-            height: 10vh;
+            width: 50vw;
+            height: 40px;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
             justify-content: center;
-            margin-left: 30px;
-            margin-right: 15%;
+        }
+
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 80vw;
+        .imglinks {
+            width: 20vw !important;
         }
     }
 
@@ -72,11 +102,5 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
-
-    @media screen and (max-width: 1000px) {
-        img {
-            width: 32px;
-            height: 32px;
-        }
-    }
+    
 `;

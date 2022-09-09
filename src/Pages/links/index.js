@@ -1,14 +1,34 @@
 import Footer from "../../Components/Footer";
-import { Container } from "./style";
+import { Container, ContainerPerfil } from "./style";
 import gitHubImg from "../../assets/GitHub-Mark-Light-120px-plus.png";
 import instaImg from "../../assets/Instagram.png";
 import faceImg from "../../assets/facebook.png";
 import linkedinImg from "../../assets/linkedin.png";
 import gmailImg from "../../assets/google_mail_gmail.png";
+import { useEffect, useState } from "react";
+import apiGithub from "../../services/github";
 
 function Links() {
+    const [perfilGithub, setPerfilGithub] = useState([]);
+
+    useEffect(() => {
+        async function load() {
+            const [repositorioData] = await Promise.all([apiGithub.get(``)]);
+            setPerfilGithub(repositorioData.data);
+        }
+        load();
+    }, []);
     return (
         <>
+            <ContainerPerfil>
+                <div>
+                    <img className="img-perfil" src={perfilGithub.avatar_url} alt="Imagem de perfil"></img>
+                </div>
+                <div className="div-description">
+                    <span className="span-description">Junior Full Stack Developer, currently pursuing a bachelor's degree in Software Engineering;</span>
+                </div>
+            </ContainerPerfil>
+            
             <Container>
                 <div>
                     <a className="btlinks impar" href="https://github.com/r4f4siqueira" target="blank">
