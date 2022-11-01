@@ -9,7 +9,7 @@ function Projetos() {
 
     useEffect(() => {
         async function load() {
-            const [repositorioData] = await Promise.all([apiGithub.get(`/repos`)]);
+            const [repositorioData] = await Promise.all([apiGithub.get(`/repos?sort=updated&direction=desc`)]);
             setRepositorios(repositorioData.data);
             setLoading(false);
         }
@@ -23,24 +23,27 @@ function Projetos() {
     return (
         <>
             <Container>
-                {repositorios.map((repositorio) => (
-                    <div key={repositorio.id} className="repositorios">
-                        <h1>{repositorio.name}</h1>
-                        <h2>{repositorio.description}</h2>
-                        <br></br>
-                        <span>
-                            Ver no gitHub{" "}
-                            <a href={repositorio.html_url} target="blank">
-                                {repositorio.html_url}
-                            </a>
-                        </span>
-                        <br></br>
-                        <span>Git Clone: {repositorio.clone_url}</span>
-                        <span>Default branch: {repositorio.default_branch}</span>
-                        <br></br>
-                        <span>Linguagem: {repositorio.language}</span>
-                    </div>
-                ))}
+                {repositorios.map((repositorio) => {
+                    return !repositorio.fork?
+                        <div key={repositorio.id} className="repositorios">
+                            <h1>{repositorio.name}</h1>
+                            <h2>{repositorio.description}</h2>
+                            <br></br>
+                            <span>
+                                Ver no gitHub{" "}
+                                <a href={repositorio.html_url} target="blank">
+                                    {repositorio.html_url}
+                                </a>
+                            </span>
+                            <br></br>
+                            <span>Git Clone: {repositorio.clone_url}</span>
+                            <span>Default branch: {repositorio.default_branch}</span>
+                            <br></br>
+                            <span>Linguagem: {repositorio.language}</span>
+                        </div>
+                        :
+                        <div>teste</div>
+                })}
             </Container>
             <Footer></Footer>
         </>
