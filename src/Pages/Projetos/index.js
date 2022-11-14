@@ -42,7 +42,7 @@ function Projetos() {
                             <span>Linguagem: {repositorio.language}</span>
                         </div>
                         :
-                        <div>teste</div>
+                        null
                 })}
             </Container>
             <Footer></Footer>
