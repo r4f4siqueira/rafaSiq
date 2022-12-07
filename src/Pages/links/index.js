@@ -25,7 +25,7 @@ function Links() {
                     <img className="img-perfil" src={perfilGithub.avatar_url} alt="Imagem de perfil"></img>
                 </div>
                 <div className="div-description">
-                    <span className="span-description">Junior Full Stack Developer, currently pursuing a bachelor's degree in Software Engineering;</span>
+                    <span className="span-description">Junior Full Stack Developer and bachelor's in Software Engineering;</span>
                 </div>
             </ContainerPerfil>
             
