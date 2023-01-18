@@ -11,4 +11,4 @@ Repositório contém site que utilizo como meio de divulgar minhas redes sociais
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-## Acesse 👉 [www.r4f4siqueira.com](www.r4f4siqueira.com)
+## Acesse 👉 www.r4f4siqueira.com
