@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './Pages/Error';
 import Home from './Pages/Home';
-import Projetos from './Pages/Projetos';
+import Projects from './Pages/Projects';
 
 function RoutesApp() {
     return (
@@ -13,7 +13,7 @@ function RoutesApp() {
                 />
                 <Route
                     path="/projetos"
-                    element={<Projetos />}
+                    element={<Projects />}
                 />
 
                 <Route
