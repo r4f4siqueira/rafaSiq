@@ -1,17 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header";
-import Projetos from "./Pages/Projetos";
-import Links from "./Pages/links";
-import Creditos from "./Pages/Creditos";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NotFound from './Pages/Error';
+import Home from './Pages/Home';
+import Projetos from './Pages/Projetos';
 
 function RoutesApp() {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
-                <Route path="/" element={<Links />} />
-                <Route path="/projetos" element={<Projetos />} />
-                <Route path="/creditos" element={<Creditos />} />
+                <Route
+                    path="/"
+                    element={<Home />}
+                />
+                <Route
+                    path="/projetos"
+                    element={<Projetos />}
+                />
+
+                <Route
+                    path="*"
+                    element={<NotFound />}
+                />
             </Routes>
         </BrowserRouter>
     );

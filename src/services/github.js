@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
 
 const apiGithub = axios.create({
-    baseURL: "https://api.github.com/users/r4f4siqueira",
+    baseURL: 'https://api.github.com/users/r4f4siqueira',
 });
 
 export default apiGithub;
@@ -10,4 +10,4 @@ export default apiGithub;
 //https://api.github.com/users/r4f4siqueira
 
 //Meus repositorios
-//https://api.github.com/users/r4f4siqueira/repos
+//https://api.github.com/users/r4f4siqueira/repos?sort=updated&direction=desc
