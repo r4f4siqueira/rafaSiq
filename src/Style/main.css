@@ -1,4 +1,7 @@
 * {
-    background-color: #0c031a;
-    font-family: "Cascadia Mono",Arial, Helvetica, sans-serif;
+    font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: 'none';
 }
