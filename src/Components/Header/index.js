@@ -1,43 +1,27 @@
 import { Box, Button, Link, Text } from '@chakra-ui/react';
-import { FaSun } from 'react-icons/fa';
+import { FiArrowLeft } from 'react-icons/fi';
 
 function Header() {
     return (
         <Box
             display={'flex'}
             flexDirection="row"
-            justifyContent={'space-between'}
             alignItems={'center'}
+            background={'blackAlpha.900'}
         >
-            <Box
-                marginLeft="20px"
-                width={'50%'}
-            >
-                <Text>r4f4siqueira</Text>
-            </Box>
-            <Box
-                width={'50%'}
-                display="flex"
-                flexDirection="row"
-                justifyContent={'end'}
-                marginRight="20px"
-                alignItems={'center'}
-            >
+            <Box>
                 <Link
-                    href="/projects"
+                    href="/"
                     _hover={{}}
                 >
                     <Button
-                        leftIcon={<FaSun />}
-                        marginRight={'20px'}
+                        colorScheme={'yellow'}
+                        borderRadius="0"
                     >
-                        <Text>Projects</Text>
+                        <FiArrowLeft />
+                        <Text>r4f4siqueira</Text>
                     </Button>
                 </Link>
-
-                <Button variant="solid">
-                    <FaSun />
-                </Button>
             </Box>
         </Box>
     );

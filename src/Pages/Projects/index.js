@@ -1,5 +1,7 @@
+import { Box } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import apiGithub from '../../services/github';
+import Header from '../../Components/Header';
+import apiGithub from '../../Services/github';
 
 function Projetos() {
     const [repositorios, setRepositorios] = useState([]);
@@ -21,9 +23,9 @@ function Projetos() {
     console.log(repositorios[0].id);
 
     return (
-        <>
-            <h1>Projetos</h1>
-        </>
+        <Box>
+            <Header />
+        </Box>
     );
 }
 export default Projetos;

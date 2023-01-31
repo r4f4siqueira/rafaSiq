@@ -1,7 +1,13 @@
 * {
     font-family: 'Cascadia Mono', Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 a {
     text-decoration: 'none';
+}
+
+#root {
+    min-height: 100vh;
+    background-color: #000000eb;
 }
