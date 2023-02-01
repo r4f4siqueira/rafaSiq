@@ -19,7 +19,12 @@ function Header() {
                         borderRadius="0"
                     >
                         <FiArrowLeft />
-                        <Text>r4f4siqueira</Text>
+                        <Text
+                            cursor={'pointer'}
+                            color={'blackAlpha.900'}
+                        >
+                            r4f4siqueira
+                        </Text>
                     </Button>
                 </Link>
             </Box>
