@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import apiGithub from "../../services/github";
-import { Container } from "./style";
-import Footer from "../../Components/Footer";
+import React, { useState, useEffect } from 'react';
+import apiGithub from '../../Services/github';
+import { Container } from './style';
+import Footer from '../../Components/Footer';
 
 function Projetos() {
     const [repositorios, setRepositorios] = useState([]);
@@ -24,14 +24,20 @@ function Projetos() {
         <>
             <Container>
                 {repositorios.map((repositorio) => {
-                    return !repositorio.fork?
-                        <div key={repositorio.id} className="repositorios">
+                    return !repositorio.fork ? (
+                        <div
+                            key={repositorio.id}
+                            className="repositorios"
+                        >
                             <h1>{repositorio.name}</h1>
                             <h2>{repositorio.description}</h2>
                             <br></br>
                             <span>
-                                Ver no gitHub{" "}
-                                <a href={repositorio.html_url} target="blank">
+                                Ver no gitHub{' '}
+                                <a
+                                    href={repositorio.html_url}
+                                    target="blank"
+                                >
                                     {repositorio.html_url}
                                 </a>
                             </span>
@@ -41,8 +47,7 @@ function Projetos() {
                             <br></br>
                             <span>Linguagem: {repositorio.language}</span>
                         </div>
-                        :
-                        null
+                    ) : null;
                 })}
             </Container>
             <Footer></Footer>

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import apiGithub from "../../services/github";
-import { Container } from "./style";
-import Footer from "../../Components/Footer";
+import React, { useState, useEffect } from 'react';
+import apiGithub from '../../Services/github';
+import { Container } from './style';
+import Footer from '../../Components/Footer';
 
 function Home() {
     const [perfilGithub, setPerfilGithub] = useState([]);
@@ -24,7 +24,11 @@ function Home() {
         <>
             <Container>
                 <div className="divImagem">
-                    <img className="imagem" src={perfilGithub.avatar_url} alt="Imagem de perfil"></img>
+                    <img
+                        className="imagem"
+                        src={perfilGithub.avatar_url}
+                        alt="Imagem de perfil"
+                    ></img>
                 </div>
                 <div className="area-texto">
                     <div className="titulo">
@@ -36,8 +40,11 @@ function Home() {
                         <p>🌱 Estudando engenharia de software</p>
                         <br />
                         <p>
-                            💻 Trabalho como desenvolvedor Jr na faculdade em que estudo{" "}
-                            <a href="https://www.unigran.br/" target="blank">
+                            💻 Trabalho como desenvolvedor Jr na faculdade em que estudo{' '}
+                            <a
+                                href="https://www.unigran.br/"
+                                target="blank"
+                            >
                                 "UNIGRAN"
                             </a>
                         </p>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerPerfil = styled.div`
     display: flex;
@@ -7,37 +7,41 @@ export const ContainerPerfil = styled.div`
     justify-content: center;
     margin: 10px;
 
-    .img-perfil{
+    .img-perfil {
         width: 128px;
         height: 128px;
         border-radius: 100%;
     }
 
-    .div-description{
+    .div-description {
         width: 82vw;
         margin: 4px;
         display: flex;
         justify-content: center;
     }
 
-`
+    @media screen and (min-width: 820px) {
+        .span-description {
+            width: 50vw;
+        }
+    }
+`;
 
 export const Container = styled.div`
     width: 50vw;
     margin: auto;
     margin-top: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 40px 10px;
     box-shadow: 0 0 25px #fff;
     padding: 10px;
-    
 
     .btlinks {
         display: flex;
         flex-direction: row;
         text-decoration: none;
-        
+
         background-color: #fff;
         border-radius: 8px;
         background-color: #012363;
@@ -45,7 +49,7 @@ export const Container = styled.div`
         transition: all 0.3s;
         margin-top: 5px;
         margin-bottom: 5px;
-        
+
         //box-shadow: inset 0 0 10px #fff;
 
         .imglinks {
@@ -55,7 +59,7 @@ export const Container = styled.div`
             justify-content: center;
             width: 45vw;
             height: 40px;
-            margin-right:15px;
+            margin-right: 15px;
 
             img {
                 max-width: 24px;
@@ -71,10 +75,9 @@ export const Container = styled.div`
             flex-direction: column;
             justify-content: center;
         }
-
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 820px) {
         width: 80vw;
         .imglinks {
             width: 20vw !important;
@@ -102,5 +105,4 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
-    
 `;

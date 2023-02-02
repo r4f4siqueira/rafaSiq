@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import fundo from "../assets/SL-043021-42650-28.jpg";
+import { createGlobalStyle } from 'styled-components';
+import fundo from '../Assets/SL-043021-42650-28.jpg';
 
 export default createGlobalStyle`
     *{

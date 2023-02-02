@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: 50px auto;
@@ -10,7 +10,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     border: 8px solid #ffb701;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 40px 16px;
     color: #ffb701;
     h1 {
@@ -18,23 +18,24 @@ export const Container = styled.div`
         filter: drop-shadow(2px 2px 0px #161716);
     }
     h2 {
-        color: #012363;
+        color: #fff;
     }
     a {
+        padding: 2px;
         color: #ffb701;
         filter: drop-shadow(1px 1px 0px #161716);
         transition: all 0.1s;
     }
     a:hover {
-        color: #012363;
+        color: #fff;
         cursor: pointer;
         filter: none;
         background-color: rgba(1, 35, 99, 0.2);
         border-radius: 4px;
-        box-shadow: 0 0 5px #012363;
+        box-shadow: 0 0 5px #fff;
     }
     span {
-        color: #012363;
+        color: #fff;
     }
 
     .repositorios {
