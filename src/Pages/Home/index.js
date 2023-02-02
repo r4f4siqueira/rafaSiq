@@ -44,7 +44,7 @@ function Home() {
             flexDir="column"
             alignItems={'center'}
             justifyContent="center"
-            paddingTop={['2', '6', '6', '8']}
+            paddingTop={['2', '6', '6', '6']}
         >
             <Card
                 background={'blackAlpha.400'}
@@ -183,7 +183,7 @@ function Home() {
                         </Link>
 
                         <Link
-                            href="https://github.com/r4f4siqueira"
+                            href="https://www.linkedin.com/in/rafael-siqueira-a6a3a116b/"
                             _hover={{}}
                             isExternal
                         >

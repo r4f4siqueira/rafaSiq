@@ -1,6 +1,5 @@
-import { Badge, Box, Code, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, CircularProgress, Heading, Link, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import Header from '../../Components/Header';
 import apiGithub from '../../Services/github';
 
 function Projetos() {
@@ -17,12 +16,24 @@ function Projetos() {
     }, []);
 
     if (loading) {
-        return <h1>Cerregando . . . </h1>;
+        return (
+            <Box
+                display="flex"
+                flexDir="column"
+                alignItems={'center'}
+                justifyContent="center"
+            >
+                <CircularProgress
+                    isIndeterminate
+                    size={'30%'}
+                    color="blackAlpha.900"
+                />
+            </Box>
+        );
     }
 
     return (
         <Box>
-            <Header />
             <Box
                 display={'flex'}
                 flexDirection="column"
@@ -36,18 +47,28 @@ function Projetos() {
                 >
                     {repositorios.map((repositorio) => {
                         return !repositorio.fork ? (
-                            <Box key={repositorio.id}>
-                                <Heading as={'h1'}>{repositorio.name}</Heading>
-                                <Heading as={'h2'}>{repositorio.description}</Heading>
-                                <Text>
-                                    Ver no gitHub:{' '}
-                                    <Link
-                                        href={repositorio.html_url}
-                                        isExternal
-                                    >
-                                        {repositorio.html_url}
-                                    </Link>
-                                </Text>
+                            <Box
+                                key={repositorio.id}
+                                marginTop={['8px', '8px', '16px', '32px']}
+                            >
+                                <Heading
+                                    color="#FFFA5F"
+                                    as={'h1'}
+                                >
+                                    {repositorio.name}
+                                </Heading>
+                                <Box color="#759eff">
+                                    <Heading as={'h2'}>{repositorio.description}</Heading>
+                                    <Text>
+                                        Ver no gitHub:{' '}
+                                        <Link
+                                            href={repositorio.html_url}
+                                            isExternal
+                                        >
+                                            {repositorio.html_url}
+                                        </Link>
+                                    </Text>
+                                </Box>
                             </Box>
                         ) : null;
                     })}

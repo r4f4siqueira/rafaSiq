@@ -1,5 +1,4 @@
 import { Box, Button, Link, Text } from '@chakra-ui/react';
-import { FiArrowLeft } from 'react-icons/fi';
 
 function Header() {
     return (
@@ -18,7 +17,6 @@ function Header() {
                         colorScheme={'yellow'}
                         borderRadius="0"
                     >
-                        <FiArrowLeft />
                         <Text
                             cursor={'pointer'}
                             color={'blackAlpha.900'}
