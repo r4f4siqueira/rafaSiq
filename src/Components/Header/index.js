@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Container } from "./style";
 // import ToggleSwitch from "../ToggleSwitch";
 import React, { useState } from "react";
-import { Box, Button, Link, Text } from "@chakra-ui/react";
 
 function Header() {
 	const [botoes, setBotoes] = useState([
