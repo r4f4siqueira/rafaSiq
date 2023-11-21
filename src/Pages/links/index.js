@@ -31,11 +31,9 @@ function Links() {
                     </div>
                     <div className="div-description">
                         <span className="span-description">
-                            Junior Full Stack Developer at UNIGRAN, the university where I graduated in Software
-                            Engineering;
+                            Software Engineer from UNIGRAN, the university where I graduated in Software Engineering;
                             <br></br>I live in Dourados - MS Brazil, passionate about technology and extremely curious;
-                            <br></br>
-                            Below my social media:
+                            <br></br>Below are links where you can get in touch and find out more about me:
                         </span>
                     </div>
                 </ContainerPerfil>
