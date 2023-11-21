@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import apiGithub from '../../Services/github';
+
 import { Container } from './style';
-import Footer from '../../Components/Footer';
+import Footer from '../../Components/footer';
+import apiGithub from '../../services/github';
 
 function Projetos() {
     const [repositorios, setRepositorios] = useState([]);

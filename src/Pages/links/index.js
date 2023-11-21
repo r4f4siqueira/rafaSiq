@@ -1,4 +1,4 @@
-import Footer from '../../Components/Footer';
+import Footer from '../../Components/footer';
 import { Container, ContainerPerfil } from './style';
 import gitHubImg from '../../Assets/GitHub-Mark-Light-120px-plus.png';
 import instaImg from '../../Assets/Instagram.png';
@@ -6,7 +6,7 @@ import faceImg from '../../Assets/facebook.png';
 import linkedinImg from '../../Assets/linkedin.png';
 import gmailImg from '../../Assets/google_mail_gmail.png';
 import { useEffect, useState } from 'react';
-import apiGithub from '../../Services/github';
+import apiGithub from '../../services/github';
 
 function Links() {
     const [perfilGithub, setPerfilGithub] = useState([]);
