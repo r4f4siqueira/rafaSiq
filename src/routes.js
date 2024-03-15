@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Links from './Pages/links';
 import Projetos from './Pages/Projects';
 import Creditos from './Pages/Credits';
+import Jovanna from './Pages/jovanna';
 
 function RoutesApp() {
     return (
@@ -20,6 +21,11 @@ function RoutesApp() {
                 <Route
                     path="/credits"
                     element={<Creditos />}
+                />
+
+                <Route
+                    path="/jovanna"
+                    element={<Jovanna />}
                 />
 
                 <Route
