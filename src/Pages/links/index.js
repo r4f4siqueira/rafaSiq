@@ -1,4 +1,4 @@
-import Footer from '../../Components/footer';
+import Footer from '../../Components/Footer';
 import { Container, ContainerPerfil } from './style';
 import gitHubImg from '../../Assets/GitHub-Mark-Light-120px-plus.png';
 import instaImg from '../../Assets/Instagram.png';

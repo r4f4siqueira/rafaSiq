@@ -3,23 +3,28 @@ import Header from './Components/Header';
 import Links from './Pages/links';
 import Projetos from './Pages/Projects';
 import Creditos from './Pages/Credits';
+import Jovanna from './Pages/jovanna';
 
 function RoutesApp() {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
                 <Route
                     path="/"
-                    element={<Links />}
+                    element={[<Header />, <Links />]}
                 />
                 <Route
                     path="/projects"
-                    element={<Projetos />}
+                    element={[<Header />, <Projetos />]}
                 />
                 <Route
                     path="/credits"
-                    element={<Creditos />}
+                    element={[<Header />, <Creditos />]}
+                />
+
+                <Route
+                    path="/amoajovannamuitomuito"
+                    element={<Jovanna />}
                 />
 
                 <Route
