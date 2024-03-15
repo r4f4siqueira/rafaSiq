@@ -1,5 +1,5 @@
 import { Container } from './style';
-import Footer from '../../Components/footer';
+import Footer from '../../Components/Footer';
 
 function Creditos() {
     return (

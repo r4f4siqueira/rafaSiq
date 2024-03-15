@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Container } from './style';
-import Footer from '../../Components/footer';
+import Footer from '../../Components/Footer';
 import apiGithub from '../../services/github';
 
 function Projetos() {

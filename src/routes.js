@@ -24,7 +24,7 @@ function RoutesApp() {
                 />
 
                 <Route
-                    path="/jovanna"
+                    path="/amoajovannamuitomuito"
                     element={<Jovanna />}
                 />
 
