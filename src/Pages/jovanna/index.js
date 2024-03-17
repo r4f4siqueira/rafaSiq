@@ -1,5 +1,14 @@
 import React from 'react';
-import foto from '../../Assets/378431022_835911038040375_2012950259398085023_n.jpg';
+import namoro from '../../Assets/jovanna/namoro.jpg';
+import convidada from '../../Assets/jovanna/convidade.jpg';
+import vo from '../../Assets/jovanna/vo.jpg';
+import arvore from '../../Assets/jovanna/arvore.jpg';
+import copa from '../../Assets/jovanna/copa.jpg';
+import pre from '../../Assets/jovanna/pre.jpg';
+import casados from '../../Assets/jovanna/cadados.jpg';
+import bonito from '../../Assets/jovanna/bonito1.jpg';
+import natal from '../../Assets/jovanna/natal1.jpg';
+import jovana from '../../Assets/jovanna/jovanna.jpg';
 import { JovannaStyle } from './style';
 function Jovanna() {
     return (
@@ -66,42 +75,115 @@ function Jovanna() {
                     </p>
                 </div>
 
+                <div className="pedacos">
+                    <h2>📷 Selecionei algumas fotos pra vc sentir um pouco de nostalgia</h2>
+                    <span>
+                        Espero que goste de relembrar algumas coisas, pode acontecer também de você nem lembrar quando
+                        foi tirada, mas ok nem eu lembro de tudo
+                    </span>
+                </div>
+
                 <div className="fotos">
                     <div className="foto1">
-                        <h2>Imagem do nosso pre eding</h2>
                         <img
-                            src={foto}
-                            alt="Foto do pré eding"
+                            src={namoro}
+                            alt="Primeira foto namorando"
                             width="100%"
                             height="100%"
                         ></img>
+                        <hr></hr>
                     </div>
                     <div className="foto1">
-                        <h2>Imagem do nosso pre eding</h2>
                         <img
-                            src={foto}
-                            alt="Foto do pré eding"
+                            src={convidada}
+                            alt="Convidada kkk"
                             width="100%"
                             height="100%"
                         ></img>
+                        <hr></hr>
                     </div>
                     <div className="foto1">
-                        <h2>Imagem do nosso pre eding</h2>
                         <img
-                            src={foto}
-                            alt="Foto do pré eding"
+                            src={vo}
+                            alt="Foto com a vó"
                             width="100%"
                             height="100%"
                         ></img>
+                        <hr></hr>
                     </div>
                     <div className="foto1">
-                        <h2>Imagem do nosso pre eding</h2>
                         <img
-                            src={foto}
-                            alt="Foto do pré eding"
+                            src={arvore}
+                            alt="Foto na arvore"
                             width="100%"
                             height="100%"
                         ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={copa}
+                            alt="É não foi dessa vez"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={pre}
+                            alt="Hmmmmm <3"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={casados}
+                            alt="Finalmente marido e muié"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={bonito}
+                            alt="Saudaes lua de mel"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={natal}
+                            alt="Primeiro natal juntos"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <hr></hr>
+                    </div>
+                    <div className="foto1">
+                        <img
+                            src={jovana}
+                            alt="Sua foto"
+                            width="100%"
+                            height="100%"
+                        ></img>
+                        <h2>😍 Juro que fiquei namorando essa foto durante muito tempo</h2>
+                        <p>
+                            Nessa foto vc está estpontanea, vc estava linda e foi um dia incrivel de uma tarde de
+                            domingo que passamos juntos andando pela cidade e tomando suvete num frio do caramba, mas
+                            fazer oque era oque dava pra fazer;
+                        </p>
+                        <p>Obrigado por tudo!!!</p>
+                        <hr></hr>
+                    </div>
+
+                    <div className="pedacos">
+                        <h1>Moça você é linda!</h1>
                     </div>
                 </div>
             </div>
