@@ -1,10 +1,10 @@
 import Footer from '../../Components/Footer';
 import { Container, ContainerPerfil } from './style';
-import gitHubImg from '../../Assets/GitHub-Mark-Light-120px-plus.png';
-import instaImg from '../../Assets/Instagram.png';
-import faceImg from '../../Assets/facebook.png';
-import linkedinImg from '../../Assets/linkedin.png';
-import gmailImg from '../../Assets/google_mail_gmail.png';
+import gitHubImg from '../../assets/GitHub-Mark-Light-120px-plus.png';
+import instaImg from '../../assets/Instagram.png';
+import faceImg from '../../assets/facebook.png';
+import linkedinImg from '../../assets/linkedin.png';
+import gmailImg from '../../assets/google_mail_gmail.png';
 import { useEffect, useState } from 'react';
 import apiGithub from '../../services/github';
 
@@ -31,30 +31,12 @@ function Links() {
                     </div>
                     <div className="div-description">
                         <span className="span-description">
-                            Software Engineer from UNIGRAN, the university where I graduated in Software Engineering;
-                            <br></br>I live in Dourados - MS Brazil, passionate about technology and extremely curious;
-                            <br></br>Below are links where you can get in touch and find out more about me:
+                            My name is Rafael, I have seven years of experience in software development. I created this
+                            website at the beginning of my studies and I maintain it with some updates. If you want to
+                            know more about me, follow my social networks below:
                         </span>
                     </div>
                 </ContainerPerfil>
-                <div>
-                    <a
-                        className="btlinks impar"
-                        href="https://github.com/r4f4siqueira"
-                        target="blank"
-                    >
-                        <div className="imglinks">
-                            <img
-                                src={gitHubImg}
-                                alt="github"
-                            ></img>
-                        </div>
-                        <div className="spanlinks">
-                            <span>r4f4siqueira</span>
-                        </div>
-                    </a>
-                </div>
-
                 <div>
                     <a
                         className="btlinks par"
@@ -69,6 +51,24 @@ function Links() {
                         </div>
                         <div className="spanlinks">
                             <span>Rafael Siqueira</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a
+                        className="btlinks impar"
+                        href="https://github.com/r4f4siqueira"
+                        target="blank"
+                    >
+                        <div className="imglinks">
+                            <img
+                                src={gitHubImg}
+                                alt="github"
+                            ></img>
+                        </div>
+                        <div className="spanlinks">
+                            <span>r4f4siqueira</span>
                         </div>
                     </a>
                 </div>
