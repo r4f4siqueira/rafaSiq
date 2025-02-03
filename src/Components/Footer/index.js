@@ -10,7 +10,7 @@ function Footer() {
                     </span>
                 </div>
                 <div>
-                    <span>V 3.5.0</span>
+                    <span>V 3.5.1</span>
                 </div>
             </div>
         </Rodape>
