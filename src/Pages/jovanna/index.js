@@ -1,14 +1,14 @@
 import React from 'react';
-import namoro from '../../Assets/jovanna/namoro.jpg';
-import convidada from '../../Assets/jovanna/convidade.jpg';
-import vo from '../../Assets/jovanna/vo.jpg';
-import arvore from '../../Assets/jovanna/arvore.jpg';
-import copa from '../../Assets/jovanna/copa.jpg';
-import pre from '../../Assets/jovanna/pre.jpg';
-import casados from '../../Assets/jovanna/cadados.jpg';
-import bonito from '../../Assets/jovanna/bonito1.jpg';
-import natal from '../../Assets/jovanna/natal1.jpg';
-import jovana from '../../Assets/jovanna/jovanna.jpg';
+import namoro from '../../assets/jovanna/namoro.jpg';
+import convidada from '../../assets/jovanna/convidade.jpg';
+import vo from '../../assets/jovanna/vo.jpg';
+import arvore from '../../assets/jovanna/arvore.jpg';
+import copa from '../../assets/jovanna/copa.jpg';
+import pre from '../../assets/jovanna/pre.jpg';
+import casados from '../../assets/jovanna/cadados.jpg';
+import bonito from '../../assets/jovanna/bonito1.jpg';
+import natal from '../../assets/jovanna/natal1.jpg';
+import jovana from '../../assets/jovanna/jovanna.jpg';
 import { JovannaStyle } from './style';
 function Jovanna() {
     return (
